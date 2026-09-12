@@ -200,7 +200,7 @@
   "manifest": "https://raw.githubusercontent.com/DNDMLunga/monks-enhanced-journal-v14/main/module.json",
   "download": "https://github.com/DNDMLunga/monks-enhanced-journal-v14/releases/download/v14.01-rotfm1/monks-enhanced-journal-v14.zip",
   "bugs": "https://github.com/ironmonk108/monks-enhanced-journal/issues",
-  "id": "monks-enhanced-journal-v14",
+  "id": "monks-enhanced-journal",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
