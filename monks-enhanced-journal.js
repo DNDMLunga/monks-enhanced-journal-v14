@@ -1589,7 +1589,14 @@ export class MonksEnhancedJournal {
 							});
 							if (isGood) {
 								let type = foundry.utils.getProperty(journal, "flags.monks-enhanced-journal.type") || "journalentry";
-								let pageData = { type: type, name: journal.name };
+								// FIX (RotFM1 fork): the native page `type` must stay a real, valid JournalEntryPage
+								// type ("text") — the MEJ type belongs only in the flag, same pattern used by
+								// fixType() and by the pages.size == 1 branch just below. Setting `type` to the MEJ
+								// type string directly (the original upstream code) fails dnd5e's page-type schema
+								// validation ("journalentry" is not a valid type for the JournalEntryPage Document
+								// class) and silently leaves the journal with zero pages forever, which is also why
+								// a brand-new entry never opens as MEJ in the first place.
+								let pageData = { type: "text", name: journal.name };
 								foundry.utils.setProperty(pageData, "flags.monks-enhanced-journal.type", type);
 								await JournalEntryPage.create(pageData, { parent: journal });
 							}

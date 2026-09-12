@@ -1,5 +1,5 @@
 {
-  "title": "Monk's Enhanced Journal",
+  "title": "Monk's Enhanced Journal (v14 Fork)",
   "description": "Treat the journal like it's going to be popped out and used as a digital guide book.  Add extra information to summarize an encounter.  Show summaries of people and places.  Allow for bookmarking of commonly used pages",
   "version": "14.01",
   "authors": [
@@ -197,10 +197,8 @@
     }
   },
   "url": "https://github.com/ironmonk108/monks-enhanced-journal",
-  "download": "https://github.com/ironmonk108/monks-enhanced-journal/archive/14.01.zip",
-  "manifest": "https://github.com/ironmonk108/monks-enhanced-journal/releases/latest/download/module.json",
   "bugs": "https://github.com/ironmonk108/monks-enhanced-journal/issues",
-  "id": "monks-enhanced-journal",
+  "id": "monks-enhanced-journal-v14",
   "compatibility": {
     "minimum": "14",
     "verified": "14"
